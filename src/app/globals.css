@@ -44,12 +44,21 @@ body {
 }
 
 
-.bg_home {
+.bg_home{
   background: url('../../public/assets/home/background-home-desktop.jpg');
+}
+
+.bg_destination{
+  background: url('../../public/assets/destination/background-destination-desktop.jpg');
+}
+
+.bg_home, 
+.bg_destination {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 100vh;
   color: white;
+  object-fit: cover;
 }
