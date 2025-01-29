@@ -2,20 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+@font-face {
+  font-family : "barlow-regular";
+  src: url(../../public/fonts/Barlow/Barlow-Regular.ttf);
+}
+@font-face {
+  font-family : "barlow-bold";
+  src: url(../../public/fonts/Barlow/Barlow-Bold.ttf);
+}
+@font-face {
+  font-family : "barlow-light";
+  src: url(../../public/fonts/Barlow/Barlow-Light.ttf);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Barlow condensed  */
+@font-face {
+  font-family : "barlow-condensed-regular";
+  src: url(../../public/fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf);
 }
+@font-face {
+  font-family : "barlow-condensed-bold";
+  src: url(../../public/fonts/Barlow_Condensed/BarlowCondensed-Bold.ttf);
+}
+@font-face {
+  font-family : "barlow-condensed-light";
+  src: url(../../public/fonts/Barlow_Condensed/BarlowCondensed-Light.ttf);
+}
+
+/* Bellefair */
+@font-face {
+  font-family : "bellefair-regular";
+  src: url(../../public/fonts/Bellefair/Bellefair-Regular.ttf);
+}
+
+
+
 
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.bg_home {
+  background: url('../../public/assets/home/background-home-desktop.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  color: white;
 }
