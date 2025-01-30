@@ -62,4 +62,8 @@ body {
   color: white;
   object-fit: cover;
   background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
 }

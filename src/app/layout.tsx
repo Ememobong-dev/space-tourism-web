@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-
+import { AntdRegistry } from "@ant-design/nextjs-registry";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,11 +15,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-      >
-      <Navbar />
+      <body>
+        <AntdRegistry>
+          <Navbar />
 
-        {children}
+          {children}
+        </AntdRegistry>
       </body>
     </html>
   );
