@@ -61,4 +61,5 @@ body {
   height: 100vh;
   color: white;
   object-fit: cover;
+  background-attachment: fixed;
 }
