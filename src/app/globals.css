@@ -52,8 +52,14 @@ body {
   background: url('../../public/assets/destination/background-destination-desktop.jpg');
 }
 
+.bg_crew{
+  background: url('../../public/assets/crew/background-crew-desktop.jpg');
+
+}
+
 .bg_home, 
-.bg_destination {
+.bg_destination,
+.bg_crew {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
