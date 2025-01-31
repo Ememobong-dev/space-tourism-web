@@ -7,7 +7,7 @@ import { Col, Row } from "antd";
 import data from "@/app/data.json";
 
 const Destination = () => {
-  const destinationData = data.destinations
+  const destinationData = data.destinations;
   const [destinationIndex, setDestinationIndex] = useState(0);
 
   const handleDestinationClick = (index: number) => {
@@ -19,17 +19,19 @@ const Destination = () => {
       <div className="px-28">
         <Row justify={"center"} className="pb-20">
           <Col xs={18} xxl={16}>
-            <Row justify={"center"} gutter={45}>
+            <Row justify={"center"} gutter={72}>
               <Col xs={24}>
                 <TitleNav title="Pick your destination" num="01" />
               </Col>
               <Col xs={12}>
-                <div className=" w-full ">
+                <div className=" w-full">
                   <Image
                     src={destinationData[destinationIndex].images.png}
-                    className="w-full"
                     alt="moon img"
-                    objectFit="fit"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: "100%", height: "auto" }}
                   />
                 </div>
               </Col>
@@ -40,14 +42,14 @@ const Destination = () => {
                       <span
                         key={index}
                         onClick={() => handleDestinationClick(index)}
-                        className="cursor-pointer"
+                        className={`cursor-pointer  ${destinationIndex === index ? "border-b-2 border-white" : ""} `}
                       >
                         {place.name}
                       </span>
                     ))}
                   </div>
-                  <div className="mt-20 flex flex-col gap-y-10">
-                    <h2 className="text-8xl font-bellefairReg ">
+                  <div className="mt-14 flex flex-col gap-y-10">
+                    <h2 className="text-8xl uppercase font-bellefairReg ">
                       {destinationData[destinationIndex].name}
                     </h2>
                     <p className="text-xl font-barlowCondensedLight text-blue300 ">
