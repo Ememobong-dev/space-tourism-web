@@ -60,6 +60,14 @@ body {
   background: url('../../public/assets/technology/background-technology-desktop.jpg');
 }
 
+
+@media (max-width: 767px) {
+  .bg_home{
+    background: url('../../public/assets/home/background-home-mobile.jpg');
+  }
+}
+
+
 .bg_home, 
 .bg_destination,
 .bg_crew, 
@@ -74,6 +82,7 @@ body {
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }

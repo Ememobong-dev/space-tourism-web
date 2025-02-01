@@ -25,11 +25,11 @@ const Crew = () => {
 
   return (
     <div className="bg_crew">
-      <div className="w-full px-44">
+      <div className="w-full px-44  ">
         <div>
-          <TitleNav title="Space launch 101" num="03" />
+          <TitleNav title="Meet your crew" num="02" />
         </div>
-        <Row className="pb-20" justify={"center"} align={"middle"}>
+        <Row justify={"center"} align={"middle"}>
           <Col xs={16}>
             <div className="h-[500px] flex flex-col justify-center ">
               <DoubleLayerText
@@ -59,7 +59,7 @@ const Crew = () => {
                 objectFit="cover"
                 width={400}
                 height={400}
-                className="max-h-[600px] min-h-[600px] min-w-[500px] max-w-[500px] "
+                className="max-h-[450px] max-w-[450px] "
               />
             </div>
           </Col>

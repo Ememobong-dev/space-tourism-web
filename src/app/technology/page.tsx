@@ -22,7 +22,7 @@ const Technology = () => {
         <div>
         <TitleNav title="Space launch 101" num="03" />
         </div>
-        <Row className="pb-20">
+        <Row>
           {/* <Col xs={24}>
             <TitleNav title="Space launch 101" num="03" />
           </Col> */}
