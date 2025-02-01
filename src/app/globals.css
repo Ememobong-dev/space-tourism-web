@@ -54,12 +54,16 @@ body {
 
 .bg_crew{
   background: url('../../public/assets/crew/background-crew-desktop.jpg');
+}
 
+.bg_technology{
+  background: url('../../public/assets/technology/background-technology-desktop.jpg');
 }
 
 .bg_home, 
 .bg_destination,
-.bg_crew {
+.bg_crew, 
+.bg_technology {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
