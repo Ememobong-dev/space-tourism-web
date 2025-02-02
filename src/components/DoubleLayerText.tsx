@@ -8,16 +8,16 @@ type TextInterface = {
 
 const DoubleLayerText = ({upperLayerText, lowerLayertext, description} : TextInterface) => {
   return (
-    <div className="flex flex-col items-center md:items-start gap-6 md:h-[300px]">
+    <div className="flex flex-col mb-5 lg:mb-0 items-center lg:items-start gap-6 lg:h-[300px]">
       <div>
-        <h3 className=" text-white/70 text-center md:text-left uppercase font-bellefairReg text-lg md:text-3xl">
+        <h3 className=" text-white/70 text-center lg:text-left uppercase font-bellefairReg text-lg lg:text-3xl">
           {upperLayerText}
         </h3>
-        <h3 className="md:text-5xl text-2xl  text-center md:text-left  font-bellefairReg uppercase tracking-widest">
+        <h3 className="lg:text-5xl text-2xl  text-center lg:text-left  font-bellefairReg uppercase tracking-widest">
           {lowerLayertext}
         </h3>
       </div>
-      <p className="text-blue300 text-center md:text-left md:h-[200px] w-full md:w-[65%] font-barlowReg text-base md:text-xl">
+      <p className="text-blue300 md:px-28 lg:px-0 text-center lg:text-left lg:h-[200px] w-full lg:w-[65%] font-barlowReg text-base lg:text-xl">
         {description}
       </p>
     </div>

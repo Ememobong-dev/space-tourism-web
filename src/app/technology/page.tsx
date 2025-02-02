@@ -18,14 +18,14 @@ const Technology = () => {
 
   return (
     <div className="bg_technology">
-      <div className="w-full md:pl-44 lg:pb-24">
+      <div className="w-full lg:pl-44 ">
         <div>
           <TitleNav title="Space launch 101" num="03" />
         </div>
         <Row>
-          <Col xs={{span:24, order:2 }} md={{span:16, order:1 }} >
-            <div className="flex md:flex-row flex-col-reverse items-center  md:h-[500px] gap-10 md:gap-20">
-              <div className="flex md:h-[300px]  gap-4  md:flex-col">
+          <Col xs={{span:24, order:2 }} lg={{span:16, order:1 }} >
+            <div className="flex lg:flex-row flex-col items-center  lg:h-[500px] gap-10 lg:gap-20">
+              <div className="flex lg:h-[300px] mt-3 lg:mt-0 gap-4  lg:flex-col">
                 {technologyData.map((item, index) => (
                   <RoundBgText
                     currentindex={index}
@@ -36,7 +36,7 @@ const Technology = () => {
                   />
                 ))}
               </div>
-              <div className="flex justify-center md:h-[500px] items-center  ">
+              <div className="flex justify-center lg:h-[500px] items-center  ">
                 <DoubleLayerText
                   upperLayerText={"The terminology..."}
                   lowerLayertext={technologyData[techDataIndex].name}
@@ -45,8 +45,8 @@ const Technology = () => {
               </div>
             </div>
           </Col>
-          <Col xs={{span:24, order:1 }} md={{span:8, order:2 }} >
-            <span className="w-full hidden md:block h-full">
+          <Col xs={{span:24, order:1 }} lg={{span:8, order:2 }} >
+            <span className="w-full hidden lg:block h-full">
               <Image
                 width={500}
                 height={500}
@@ -55,11 +55,11 @@ const Technology = () => {
                 alt="space"
               />
             </span>
-            <span className="w-full md:hidden h-[250px]">
+            <span className="w-full h-full lg:hidden ">
               <Image
-                width={250}
-                height={150}
-                className="w-full"
+                width={100}
+                height={250}
+                className="object-cover w-full h-[250px] md:h-[350px]"
                 src={technologyData[techDataIndex].images.portrait}
                 alt="space"
               />

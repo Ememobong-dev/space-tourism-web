@@ -25,13 +25,13 @@ const Crew = () => {
 
   return (
     <div className="bg_crew">
-      <div className="w-full px-8  justify-center lg:px-44 lg:pb-24  ">
+      <div className="w-full px-8 pb-24  justify-center lg:px-44 lg:pb-24  ">
         <div>
           <TitleNav title="Meet your crew" num="02" />
         </div>
         <Row justify={"center"} align={"middle"} gutter={[0, 16]}>
-          <Col xs={24} md={16}>
-            <div className="md:h-[500px] mt-8 md:my-0 flex flex-col items-center md:items-start gap-10 justify-center ">
+          <Col xs={24} lg={16}>
+            <div className="md:h-[500px] mt-8 lg:my-0 flex flex-col items-center lg:items-start gap-10 justify-center ">
               <DoubleLayerText
                 upperLayerText={crewData[crewIndex].role}
                 lowerLayertext={crewData[crewIndex].name}
@@ -51,8 +51,8 @@ const Crew = () => {
               </div>
             </div>
           </Col>
-          <Col xs={24} md={8}>
-            <div className="w-full hidden md:block h-full  ">
+          <Col xs={24} lg={8}>
+            <div className="w-full hidden lg:block h-full  ">
               <Image
                 src={crewData[crewIndex].images.png}
                 alt="crew img"
@@ -62,7 +62,7 @@ const Crew = () => {
                 className="max-h-[450px] max-w-[450px]   "
               />
             </div>
-            <div className=" md:hidden flex justify-center  h-[250px] overflow-hidden ">
+            <div className=" lg:hidden flex justify-center  h-[250px] overflow-hidden ">
               <Image
                 src={crewData[crewIndex].images.png}
                 alt="crew img"

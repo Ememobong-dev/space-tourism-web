@@ -93,3 +93,16 @@ body {
   align-content: center;
   align-items: center; */
 }
+
+
+.navShow .ant-drawer-header{
+  display: none !important;
+}
+
+.navShow {
+  background: rgba(15, 15, 15, 0.1) !important;
+  backdrop-filter: blur(20px) brightness(90%); 
+  -webkit-backdrop-filter: blur(20px) brightness(90%);
+  border-left: 1px solid rgba(255, 255, 255, 0.2); 
+}
+
