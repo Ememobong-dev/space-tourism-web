@@ -35,7 +35,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex w-full fixed justify-between items-center gap-8 pl-12 py-6 ">
+    <div className="flex w-full fixed justify-between items-center gap-8 px-8 md:pr-0 md:pl-12 py-6 ">
       <span className="bg-white rounded-full flex justify-center items-center">
         <Image src={logo} alt="logo" />
       </span>
